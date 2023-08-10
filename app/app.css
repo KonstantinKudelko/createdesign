@@ -1,0 +1,16 @@
+@import "/css/fonts/_gotham-pro.css";
+@import "/css/fonts/_neutral-face.css";
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
