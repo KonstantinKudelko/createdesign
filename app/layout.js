@@ -8,7 +8,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className="relative bg-black overflow-hidden">{children}</body>
+      <body className="relative bg-black">{children}</body>
     </html>
   );
 }
