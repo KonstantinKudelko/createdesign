@@ -7,7 +7,7 @@ export default function Home() {
       <Header />
 
       <main className="w-full min-h-full">
-        <section className="mb-24 h-screen flex flex-col justify-end">
+        <section className="px-4 mb-24 h-screen flex flex-col justify-end">
           <Image
             src="/images/homepage/hero-image.jpg"
             alt="hero-image"
@@ -16,14 +16,14 @@ export default function Home() {
             className="h-full w-4/5 object-cover absolute left-0 top-0 -z-10"
           />
 
-          <div className="w-full container mx-auto mb-6">
+          <div className="w-full container mx-auto mb-8">
             <span className="lg:hidden block mb-8 mr-12 max-w-[315px] block relative bottom-[5px] text-white text-lg font-gotham font-light">
               Our studio guarantees comfortable cooperation and the development
               of modern concept for your home.
             </span>
 
-            <div className="mb-8 flex items-center">
-              <span className="sm:text-5xl sm:mr-12 mr-4 font-neutral text-white text-2xl">
+            <div className="lg:mb-0 xl:mb-8 mb-8 flex items-center">
+              <span className="2xl:text-8xl 2xl:mr-16 xl:text-6xl xl:mr-14 lg:text-4xl lg:mr-8 mr-4 font-neutral text-white text-2xl">
                 Unique material
               </span>
 
@@ -31,12 +31,12 @@ export default function Home() {
             </div>
 
             <div className="lg:flex-row flex flex-col">
-              <span className="lg:block hidden mb-8 mr-12 max-w-[315px] block relative bottom-[5px] text-white text-lg font-gotham font-light">
+              <span className="lg:block lg:-bottom-[34px] hidden mb-8 mr-12 max-w-[315px] block relative -bottom-[10px] text-white text-xl font-gotham font-light">
                 Our studio guarantees comfortable cooperation and the
                 development of modern concept for your home.
               </span>
 
-              <span className="sm:text-5xl sm:leading-[55px] self-end font-neutral text-white text-2xl leading-[35px]">
+              <span className="2xl:text-8xl 2xl:leading-[125px] xl:text-6xl xl:leading-[65px] lg:text-4xl lg:leading-[55px] self-end font-neutral text-white text-2xl leading-[35px]">
                 From our exclusive <br /> suppliers
               </span>
             </div>
@@ -45,8 +45,8 @@ export default function Home() {
           </div>
         </section>
 
-        <section className="mb-24 flex justify-between container mx-auto columns-2 gap-12">
-          <div className="max-w-[400px] flex flex-col justify-between">
+        <section className="lg:flex-row lg:gap-48 mb-24 flex flex-col justify-between container mx-auto columns-2 gap-12">
+          <div className="px-4 basis-2/4 flex flex-col justify-between">
             <div>
               <span className="block mb-4 text-lg text-white uppercase font-light">
                 Main
@@ -73,15 +73,18 @@ export default function Home() {
             </div>
           </div>
 
-          <Image
-            src="/images/homepage/about.jpg"
-            alt="about-image"
-            width={700}
-            height={475}
-          />
+          <div className="w-full relative pt-[100%]">
+            <Image
+              src="/images/homepage/about.jpg"
+              alt="about-image"
+              objectFit="cover"
+              fill={true}
+              className="w-full h-full top-0 left-0 object-cover"
+            />
+          </div>
         </section>
 
-        <section className="mb-24 flex justify-between container mx-auto columns-4 gap-6">
+        <section className="px-4 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-4 mb-24 container mx-auto grid gap-12">
           <div>
             <span className="mb-2 block text-5xl text-white font-light border-b border-b-gray">
               12+
@@ -127,7 +130,7 @@ export default function Home() {
           className="mb-24 w-full"
         />
 
-        <section className="mb-24 container mx-auto">
+        <section className="px-4 mb-24 container mx-auto">
           <div className="mb-10">
             <span className="block mb-4 text-lg text-white uppercase font-light">
               Our
@@ -138,7 +141,7 @@ export default function Home() {
             </h2>
           </div>
 
-          <div className="flex justify-between columns-3 gap-48">
+          <div className="sm:grid-cols-1 sm:gap-12 lg:grid-cols-3 lg:gap-48 mb-24 container mx-auto grid gap-12">
             <div>
               <span className="block mb-2 text-lg text-white">Test</span>
               <p className="text-gray">
@@ -166,15 +169,17 @@ export default function Home() {
         </section>
 
         <section className="px-4 mb-24 flex justify-center container mx-auto columns-2 gap-24">
-          <Image
-            src="/images/homepage/our-work.jpg"
-            alt="our-work-image"
-            width={700}
-            height={350}
-            className="max-w-[450px]"
-          />
+          <div className="hidden lg:block basis-1/2 w-full relative pt-[100%]">
+            <Image
+              src="/images/homepage/our-work.jpg"
+              alt="our-work-image"
+              objectFit="cover"
+              fill={true}
+              className="w-full h-full top-0 left-0 object-cover"
+            />
+          </div>
 
-          <div>
+          <div className="sm:basis-full lg:basis-1/2">
             <div className="mb-10">
               <span className="block mb-4 text-lg text-white uppercase font-light">
                 What is
@@ -237,8 +242,8 @@ export default function Home() {
           </div>
         </section>
 
-        <section className="px-4 mb-24 flex justify-center container mx-auto columns-2 gap-24">
-          <div className="mb-10 max-w-[445px]">
+        <section className="lg:mb-24 px-4 mb-16 flex justify-between container mx-auto columns-2 gap-24">
+          <div className="mb-10 sm:basis-full lg:basis-1/4">
             <span className="block mb-4 text-lg text-white uppercase font-light">
               It&apos;s time to
             </span>
@@ -275,25 +280,29 @@ export default function Home() {
             </form>
           </div>
 
-          <Image
-            src="/images/homepage/discuss.jpg"
-            alt="discuss-image"
-            width={700}
-            height={350}
-            className="max-w-[600px]"
-          />
+          <div className="hidden lg:block basis-3/4 w-full relative pt-[100%]">
+            <Image
+              src="/images/homepage/discuss.jpg"
+              alt="discuss-image"
+              objectFit="cover"
+              fill={true}
+              className="w-full h-full top-0 left-0 object-cover"
+            />
+          </div>
         </section>
 
-        <section className="px-4 mb-48 flex justify-center container mx-auto columns-2 gap-24">
-          <Image
-            src="/images/homepage/contact.png"
-            alt="contact-image"
-            width={700}
-            height={350}
-            className="max-w-[600px]"
-          />
+        <section className="lg:mb-24 px-4 mb-12 flex justify-between container mx-auto columns-2 gap-24">
+          <div className="hidden lg:block basis-2/4 w-full relative pt-[100%]">
+            <Image
+              src="/images/homepage/contact.png"
+              alt="contact-image"
+              objectFit="cover"
+              fill={true}
+              className="w-full h-full top-0 left-0 object-cover"
+            />
+          </div>
 
-          <div className="mb-10 min-w-[445px]">
+          <div className="mb-10 basis-2/4">
             <span className="block mb-4 text-lg text-white uppercase font-light">
               Our
             </span>
