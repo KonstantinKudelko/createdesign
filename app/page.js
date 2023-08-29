@@ -1,5 +1,5 @@
-import { Header, ArrowNavLink, Footer } from "@/components";
 import Image from "next/image";
+import { Header, ArrowNavLink, Footer, FAQ } from "@/components";
 
 export default function Home() {
   return (
@@ -45,9 +45,9 @@ export default function Home() {
           </div>
         </section>
 
-        <section className="lg:flex-row lg:gap-48 mb-24 flex flex-col justify-between container mx-auto columns-2 gap-12">
+        <section className="xl:gap-48 lg:flex-row lg:h-[1100px] mb-24 flex flex-col justify-between container mx-auto columns-2 gap-12">
           <div className="px-4 basis-2/4 flex flex-col justify-between">
-            <div>
+            <div className="lg:mb-0 mb-12">
               <span className="block mb-4 text-lg text-white uppercase font-light">
                 Main
               </span>
@@ -56,11 +56,38 @@ export default function Home() {
                 About us
               </h2>
 
-              <p className="text-gray font-light">
+              <p className="mb-4 text-gray font-light">
                 Our studio specializes in creating modern design solutions using
                 hight quality and unique materials in our furniture
                 manufacturing in Europe. We have a lot of experience and it
                 helps to find the best solution for each client.
+              </p>
+
+              <p className="mb-4 text-gray font-light">
+                A CreateDesign Furniture is a sanctuary of craftsmanship,
+                innovation, and design. This creative space is where talented
+                artisans, designers, and engineers come together to breathe life
+                into sketches, transforming them into tangible,
+                three-dimensional realities. It is a place where wood, metal,
+                textiles, and other materials are carefully selected and molded
+                into pieces that transcend mere utility to become statements of
+                style, comfort, and identity.
+              </p>
+
+              <p className="mb-4 text-gray font-light">
+                While aesthetics often steal the spotlight, the functionality
+                and ergonomics of furniture are equally paramount. A
+                well-designed piece not only appeals to the eye but also serves
+                its intended purpose seamlessly. CreateDesign Furniture
+                prioritize not only the visual allure but also the comfort and
+                practicality of the pieces they create. Ergonomic considerations
+                ensure that chairs, tables, sofas, and other items enhance the
+                quality of life for those who use them.
+              </p>
+
+              <p className="text-gray font-light">
+                The world of CreateDesign Studio is a symphony of creativity,
+                craftsmanship, and functionality.
               </p>
             </div>
 
@@ -79,7 +106,7 @@ export default function Home() {
               alt="about-image"
               objectFit="cover"
               fill={true}
-              className="w-full h-full top-0 left-0 object-cover"
+              className="lg:max-h-[1100px] w-full top-0 left-0 object-cover"
             />
           </div>
         </section>
@@ -143,39 +170,50 @@ export default function Home() {
 
           <div className="sm:grid-cols-1 sm:gap-12 lg:grid-cols-3 lg:gap-48 mb-24 container mx-auto grid gap-12">
             <div>
-              <span className="block mb-2 text-lg text-white">Test</span>
+              <span className="block mb-2 text-lg text-white">
+                Interior design
+              </span>
+
               <p className="text-gray">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris
-                a est et mauris malesuada aliquet a nec sapien. Nunc volutpat.
+                Our team will provide you the best interior design services
+                according your wishes and budget. Using our great experience we
+                are ready to work with any kind of project.
               </p>
             </div>
 
             <div>
-              <span className="block mb-2 text-lg text-white">Test 2</span>
+              <span className="block mb-2 text-lg text-white">
+                Furniture design and supplier
+              </span>
+
               <p className="text-gray">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris
-                a est et mauris malesuada aliquet a nec sapien. Nunc volutpat.
+                Working in interior design for many years, we decided to create
+                our amazing furniture as well. We are working only with the
+                European best hight-quality materials and designers.
               </p>
             </div>
 
             <div>
-              <span className="block mb-2 text-lg text-white">Test 3</span>
+              <span className="block mb-2 text-lg text-white">Realisation</span>
+
               <p className="text-gray">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris
-                a est et mauris malesuada aliquet a nec sapien. Nunc volutpat.
+                It is very important for us to satisfy our clients. Our team can
+                provide you any additional services with the permits, architect
+                and general contractor issues to achieve the best result with
+                your new interior.
               </p>
             </div>
           </div>
         </section>
 
-        <section className="px-4 mb-24 flex justify-center container mx-auto columns-2 gap-24">
+        <section className="lg:h-[900px] px-4 mb-24 flex justify-center container mx-auto columns-2 gap-24">
           <div className="hidden lg:block basis-1/2 w-full relative pt-[100%]">
             <Image
               src="/images/homepage/our-work.jpg"
               alt="our-work-image"
               objectFit="cover"
               fill={true}
-              className="w-full h-full top-0 left-0 object-cover"
+              className="lg:max-h-[900px] w-full top-0 left-0 object-cover"
             />
           </div>
 
@@ -242,7 +280,7 @@ export default function Home() {
           </div>
         </section>
 
-        <section className="lg:mb-24 px-4 mb-16 flex justify-between container mx-auto columns-2 gap-24">
+        <section className="lg:h-[900px] lg:mb-24 px-4 mb-16 flex justify-between container mx-auto columns-2 gap-24">
           <div className="mb-10 sm:basis-full lg:basis-1/4">
             <span className="block mb-4 text-lg text-white uppercase font-light">
               It&apos;s time to
@@ -253,8 +291,9 @@ export default function Home() {
             </h2>
 
             <p className="mb-14 text-gray font-light">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris a
-              est et mauris malesuada aliquet a nec sapien. Nunc volutpat.
+              Fell free to contact us anytime according your further order or
+              free estimate. Our manager will contact you and will be happy to
+              help with any information you need.
             </p>
 
             <form className="flex flex-col">
@@ -286,19 +325,19 @@ export default function Home() {
               alt="discuss-image"
               objectFit="cover"
               fill={true}
-              className="w-full h-full top-0 left-0 object-cover"
+              className="lg:max-h-[900px] w-full top-0 left-0 object-cover"
             />
           </div>
         </section>
 
-        <section className="lg:mb-24 px-4 mb-12 flex justify-between container mx-auto columns-2 gap-24">
+        <section className="lg:h-[900px] lg:mb-24 px-4 mb-12 flex justify-between container mx-auto columns-2 gap-24">
           <div className="hidden lg:block basis-2/4 w-full relative pt-[100%]">
             <Image
               src="/images/homepage/contact.png"
               alt="contact-image"
               objectFit="cover"
               fill={true}
-              className="w-full h-full top-0 left-0 object-cover"
+              className="lg:max-h-[900px] w-full top-0 left-0 object-cover"
             />
           </div>
 
@@ -355,6 +394,8 @@ export default function Home() {
             </div>
           </div>
         </section>
+
+        <FAQ />
       </main>
 
       <Footer />
