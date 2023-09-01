@@ -14,10 +14,10 @@ export const Header = () => {
       />
 
       <a
-        href="tel:+2132524023"
+        href="tel:+13322489904"
         className="font-gotham text-white text-lg font-light"
       >
-        +(213) 252-4023
+        +13322489904
       </a>
     </header>
   );
