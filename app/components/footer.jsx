@@ -8,8 +8,8 @@ export const Footer = () => (
       </span>
 
       <p className="mb-12 text-gray font-light">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris a est et
-        mauris malesuada aliquet a nec sapien. Nunc volutpat.
+        Subscribe now - don’t miss our super deals, new magazine issues and
+        more.
       </p>
 
       <form className="flex flex-col">
@@ -74,10 +74,17 @@ export const Footer = () => (
       </a>
 
       <a
-        href="mailto:test@test.com"
+        href="tel:+1212249367"
         className="before:content-['\00B7'] before:text-white before:font-bold before:text-2xl before:mr-2 before:relative before:top-[1px] font-thin text-gray"
       >
-        test@test.com
+        +1212249367
+      </a>
+
+      <a
+        href="mailto:info@create-design.us"
+        className="before:content-['\00B7'] before:text-white before:font-bold before:text-2xl before:mr-2 before:relative before:top-[1px] font-thin text-gray"
+      >
+        info@create-design.us
       </a>
     </div>
 

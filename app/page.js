@@ -234,9 +234,8 @@ export default function Home() {
                   </span>
 
                   <p className="max-w-[350px] text-gray">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                    Mauris a est et mauris malesuada aliquet a nec sapien. Nunc
-                    volutpat.
+                    Helping our clients with exact measurement for upcoming
+                    project - our priority.
                   </p>
                 </li>
 
@@ -246,9 +245,9 @@ export default function Home() {
                   </span>
 
                   <p className="max-w-[350px] text-gray">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                    Mauris a est et mauris malesuada aliquet a nec sapien. Nunc
-                    volutpat.
+                    The main point is offering different types of concept and
+                    design, so you can pick the best one according your budget
+                    and wishes.
                   </p>
                 </li>
 
@@ -258,9 +257,10 @@ export default function Home() {
                   </span>
 
                   <p className="max-w-[350px] text-gray">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                    Mauris a est et mauris malesuada aliquet a nec sapien. Nunc
-                    volutpat.
+                    Professional team of our interior designers will be able to
+                    create the future concept of your house so you will be able
+                    to see every small detail of your future furniture and
+                    interior.
                   </p>
                 </li>
 
@@ -270,9 +270,9 @@ export default function Home() {
                   </span>
 
                   <p className="max-w-[350px] text-gray">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                    Mauris a est et mauris malesuada aliquet a nec sapien. Nunc
-                    volutpat.
+                    Final step of our work together is to make your wished
+                    design become true in a professional quality way by our
+                    team.
                   </p>
                 </li>
               </ul>
@@ -333,7 +333,7 @@ export default function Home() {
         <section className="lg:h-[900px] lg:mb-24 px-4 mb-12 flex justify-between container mx-auto columns-2 gap-24">
           <div className="hidden lg:block basis-2/4 w-full relative pt-[100%]">
             <Image
-              src="/images/homepage/contact.png"
+              src="/images/homepage/contact.jpeg"
               alt="contact-image"
               objectFit="cover"
               fill={true}
@@ -363,10 +363,10 @@ export default function Home() {
               </a>
 
               <a
-                href="tel:++13322489907"
+                href="tel:+1212249367"
                 className="before:content-['\00B7'] before:text-white before:font-bold before:text-2xl before:mr-2 before:relative before:top-[1px] font-thin text-gray"
               >
-                +13322489907
+                +1212249367
               </a>
             </div>
 
@@ -386,10 +386,10 @@ export default function Home() {
               </span>
 
               <a
-                href="mailto:test@test.com"
+                href="mailto:info@create-design.us"
                 className="before:content-['\00B7'] before:text-white before:font-bold before:text-2xl before:mr-2 before:relative before:top-[1px] font-thin text-gray"
               >
-                test@test.com
+                info@create-design.us
               </a>
             </div>
           </div>
