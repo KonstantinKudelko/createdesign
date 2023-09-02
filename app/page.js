@@ -1,5 +1,11 @@
 import Image from "next/image";
-import { Header, ArrowNavLink, Footer, FAQ } from "@/components";
+import {
+  Header,
+  ArrowNavLink,
+  Footer,
+  FAQ,
+  AboutSlideShow,
+} from "@/components";
 
 export default function Home() {
   return (
@@ -91,13 +97,15 @@ export default function Home() {
               </p>
             </div>
 
-            <div className="flex items-center justify-between">
-              <span className="block mb-4 text-lg text-white uppercase font-light">
-                Learn more
-              </span>
+            <AboutSlideShow>
+              <div className="flex items-center justify-between cursor-pointer">
+                <span className="block mb-4 text-lg text-white uppercase font-light">
+                  Learn more
+                </span>
 
-              <ArrowNavLink />
-            </div>
+                <ArrowNavLink />
+              </div>
+            </AboutSlideShow>
           </div>
 
           <div className="w-full relative pt-[100%]">
