@@ -3,7 +3,7 @@
 import * as AccordionPrimitive from "@radix-ui/react-accordion";
 import { ChevronDownIcon } from "@radix-ui/react-icons";
 import { clsx } from "clsx";
-import React from "react";
+import React, { forwardRef } from "react";
 
 const items = [
   {
@@ -43,8 +43,8 @@ const items = [
   },
 ];
 
-export const FAQ = () => (
-  <section className="max-w-[800px] mx-auto mb-24">
+export const FAQ = forwardRef((_, ref) => (
+  <section ref={ref} className="max-w-[800px] mx-auto mb-24">
     <h2 className="mb-14 text-3xl text-white text-center uppercase font-light">
       FAQ
     </h2>
@@ -91,4 +91,6 @@ export const FAQ = () => (
       ))}
     </AccordionPrimitive.Root>
   </section>
-);
+));
+
+FAQ.displayName = "FAQ";

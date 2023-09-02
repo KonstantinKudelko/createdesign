@@ -1,3 +1,5 @@
+"use client";
+
 import Image from "next/image";
 import {
   Header,
@@ -6,11 +8,22 @@ import {
   FAQ,
   AboutSlideShow,
 } from "@/components";
+import { useRef } from "react";
 
 export default function Home() {
+  const faqRef = useRef(null);
+  const aboutRef = useRef(null);
+  const servicesRef = useRef(null);
+  const contactsRef = useRef(null);
+
   return (
     <>
-      <Header />
+      <Header
+        faqRef={faqRef}
+        aboutRef={aboutRef}
+        servicesRef={servicesRef}
+        contactsRef={contactsRef}
+      />
 
       <main className="w-full min-h-full">
         <section className="px-4 mb-24 h-screen flex flex-col justify-end">
@@ -51,7 +64,10 @@ export default function Home() {
           </div>
         </section>
 
-        <section className="xl:gap-48 lg:flex-row lg:h-[1100px] mb-24 flex flex-col justify-between container mx-auto columns-2 gap-12">
+        <section
+          ref={aboutRef}
+          className="xl:gap-48 lg:flex-row lg:h-[1100px] mb-24 flex flex-col justify-between container mx-auto columns-2 gap-12"
+        >
           <div className="px-4 basis-2/4 flex flex-col justify-between">
             <div className="lg:mb-0 mb-12">
               <span className="block mb-4 text-lg text-white uppercase font-light">
@@ -165,7 +181,7 @@ export default function Home() {
           className="mb-24 w-full"
         />
 
-        <section className="px-4 mb-24 container mx-auto">
+        <section ref={servicesRef} className="px-4 mb-24 container mx-auto">
           <div className="mb-10">
             <span className="block mb-4 text-lg text-white uppercase font-light">
               Our
@@ -338,7 +354,10 @@ export default function Home() {
           </div>
         </section>
 
-        <section className="lg:h-[900px] lg:mb-24 px-4 mb-12 flex justify-between container mx-auto columns-2 gap-24">
+        <section
+          ref={contactsRef}
+          className="lg:h-[900px] lg:mb-24 px-4 mb-12 flex justify-between container mx-auto columns-2 gap-24"
+        >
           <div className="hidden lg:block basis-2/4 w-full relative pt-[100%]">
             <Image
               src="/images/homepage/contact.jpeg"
@@ -403,7 +422,7 @@ export default function Home() {
           </div>
         </section>
 
-        <FAQ />
+        <FAQ ref={faqRef} />
       </main>
 
       <Footer />
