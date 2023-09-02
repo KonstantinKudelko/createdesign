@@ -1,20 +1,42 @@
 "use client";
 
 import Image from "next/image";
+import { useEffect, useRef } from "react";
 import {
+  FAQ,
+  Footer,
   Header,
   ArrowNavLink,
-  Footer,
-  FAQ,
   AboutSlideShow,
 } from "@/components";
-import { useRef } from "react";
 
 export default function Home() {
   const faqRef = useRef(null);
   const aboutRef = useRef(null);
   const servicesRef = useRef(null);
   const contactsRef = useRef(null);
+
+  useEffect(() => {
+    // Sendpulse auth
+    const body = new FormData();
+    body.append("grant_type", "client_credentials");
+    body.append("client_id", "77bcc81c6f35f21c5908aa63bf785c2a");
+    body.append("client_secret", "006e8979e8ff3246b94aac903d445139");
+
+    async function sendPulseAuth() {
+      const response = await fetch(
+        "https://api.sendpulse.com/oauth/access_token",
+        {
+          method: "POST",
+          body,
+        }
+      );
+      const data = await response.json();
+      localStorage.setItem("token", data.access_token);
+    }
+
+    sendPulseAuth();
+  }, []);
 
   return (
     <>

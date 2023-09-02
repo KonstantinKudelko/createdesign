@@ -1,33 +1,8 @@
-import { ArrowNavLink } from "./arrow-nav-link";
+import { NewsletterForm } from "./newsletter-form";
 
 export const Footer = () => (
   <footer className="sm:flex sm:flex-col md:flex-col lg:flex-col xl:flex-row px-4 mb-24 flex flex-col justify-between container mx-auto columns-4 gap-12">
-    <div className="flex flex-col basis-80">
-      <span className="mb-6 block text-white uppercase font-light">
-        Newsletter
-      </span>
-
-      <p className="mb-12 text-gray font-light">
-        Subscribe now - don’t miss our super deals, new magazine issues and
-        more.
-      </p>
-
-      <form className="flex flex-col">
-        <input
-          type="email"
-          placeholder="Email"
-          className="py-4 mb-8 bg-transparent border-b border-b-gray"
-        />
-
-        <button className="flex items-center justify-between">
-          <span className="block mb-4 text-lg text-gray uppercase font-light">
-            Subscribe
-          </span>
-
-          <ArrowNavLink />
-        </button>
-      </form>
-    </div>
+    <NewsletterForm />
 
     <ul className="flex flex-col gap-y-4">
       <li>
