@@ -19,7 +19,7 @@ export const AboutSlideShow = ({ children }) => {
       <Dialog.Portal>
         <Dialog.Overlay className="fixed z-10 inset-0 bg-black/50 animate-fadeInOverlay" />
 
-        <Dialog.Content className="h-[90%] w-[90%] fixed z-20 left-1/2 top-1/2 h-fit -translate-x-1/2 -translate-y-1/2 animate-fadeInContent">
+        <Dialog.Content className="h-[90%] w-[90%] fixed z-20 left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 animate-fadeInContent">
           <Swiper
             loop={true}
             style={{
