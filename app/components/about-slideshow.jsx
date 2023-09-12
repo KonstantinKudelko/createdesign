@@ -36,7 +36,7 @@ export const AboutSlideShow = ({ children }) => {
                 src="/images/homepage/about-slide-1.jpeg"
                 alt="about-slide"
                 fill={true}
-                className="w-full object-cover"
+                className="w-full lg:object-cover object-contain"
               />
             </SwiperSlide>
 
@@ -45,7 +45,7 @@ export const AboutSlideShow = ({ children }) => {
                 src="/images/homepage/about-slide-2.jpeg"
                 alt="about-slide"
                 fill={true}
-                className="w-full object-cover"
+                className="w-full lg:object-cover object-contain"
               />
             </SwiperSlide>
 
@@ -54,7 +54,7 @@ export const AboutSlideShow = ({ children }) => {
                 src="/images/homepage/about-slide-3.jpeg"
                 alt="about-slide"
                 fill={true}
-                className="w-full object-cover"
+                className="w-full lg:object-cover object-contain"
               />
             </SwiperSlide>
 
@@ -63,7 +63,7 @@ export const AboutSlideShow = ({ children }) => {
                 src="/images/homepage/about-slide-4.jpeg"
                 alt="about-slide"
                 fill={true}
-                className="w-full object-cover"
+                className="w-full lg:object-cover object-contain"
               />
             </SwiperSlide>
 
@@ -72,7 +72,7 @@ export const AboutSlideShow = ({ children }) => {
                 src="/images/homepage/about-slide-5.jpg"
                 alt="about-slide"
                 fill={true}
-                className="w-full object-cover"
+                className="w-full lg:object-cover object-contain"
               />
             </SwiperSlide>
 
@@ -81,7 +81,7 @@ export const AboutSlideShow = ({ children }) => {
                 src="/images/homepage/about-slide-6.jpg"
                 alt="about-slide"
                 fill={true}
-                className="w-full object-cover"
+                className="w-full lg:object-cover object-contain"
               />
             </SwiperSlide>
 
@@ -90,7 +90,7 @@ export const AboutSlideShow = ({ children }) => {
                 src="/images/homepage/about-slide-7.jpg"
                 alt="about-slide"
                 fill={true}
-                className="w-full object-cover"
+                className="w-full lg:object-cover object-contain"
               />
             </SwiperSlide>
 
@@ -99,7 +99,7 @@ export const AboutSlideShow = ({ children }) => {
                 src="/images/homepage/about-slide-8.jpg"
                 alt="about-slide"
                 fill={true}
-                className="w-full object-cover"
+                className="w-full lg:object-cover object-contain"
               />
             </SwiperSlide>
 
@@ -108,7 +108,7 @@ export const AboutSlideShow = ({ children }) => {
                 src="/images/homepage/about-slide-9.jpg"
                 alt="about-slide"
                 fill={true}
-                className="w-full object-cover"
+                className="w-full lg:object-cover object-contain"
               />
             </SwiperSlide>
 
@@ -117,7 +117,7 @@ export const AboutSlideShow = ({ children }) => {
                 src="/images/homepage/about-slide-10.jpg"
                 alt="about-slide"
                 fill={true}
-                className="w-full object-cover"
+                className="w-full lg:object-cover object-contain"
               />
             </SwiperSlide>
 
@@ -126,7 +126,7 @@ export const AboutSlideShow = ({ children }) => {
                 src="/images/homepage/about-slide-11.jpg"
                 alt="about-slide"
                 fill={true}
-                className="w-full object-cover"
+                className="w-full lg:object-cover object-contain"
               />
             </SwiperSlide>
 
@@ -135,7 +135,7 @@ export const AboutSlideShow = ({ children }) => {
                 src="/images/homepage/about-slide-12.jpg"
                 alt="about-slide"
                 fill={true}
-                className="w-full object-cover"
+                className="w-full lg:object-cover object-contain"
               />
             </SwiperSlide>
 
@@ -144,7 +144,7 @@ export const AboutSlideShow = ({ children }) => {
                 src="/images/homepage/about-slide-13.jpg"
                 alt="about-slide"
                 fill={true}
-                className="w-full object-cover"
+                className="w-full lg:object-cover object-contain"
               />
             </SwiperSlide>
 
@@ -153,7 +153,7 @@ export const AboutSlideShow = ({ children }) => {
                 src="/images/homepage/about-slide-14.jpg"
                 alt="about-slide"
                 fill={true}
-                className="w-full object-cover"
+                className="w-full lg:object-cover object-contain"
               />
             </SwiperSlide>
           </Swiper>
