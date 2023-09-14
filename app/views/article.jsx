@@ -1,11 +1,25 @@
 "use client";
 
-import { MDXRemote } from "next-mdx-remote";
 import Link from "next/link";
+import Image from "next/image";
+import { MDXRemote } from "next-mdx-remote";
 
 const Paragraph = ({ children }) => {
   return (
     <p className="mb-8 text-md text-white dark:white font-thin">{children}</p>
+  );
+};
+
+const Figure = ({ src, alt }) => {
+  return (
+    <Image
+      width={0}
+      height={0}
+      alt={alt}
+      src={src}
+      sizes="100vw"
+      className="w-full h-auto mb-8"
+    />
   );
 };
 
@@ -22,7 +36,10 @@ export const Article = ({ title, content }) => {
         {title}
       </h1>
 
-      <MDXRemote compiledSource={content} components={{ p: Paragraph }} />
+      <MDXRemote
+        compiledSource={content}
+        components={{ p: Paragraph, img: Figure }}
+      />
     </div>
   );
 };
