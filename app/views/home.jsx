@@ -1,6 +1,7 @@
 "use client";
 
 import Image from "next/image";
+import { useForm } from "@formspree/react";
 import { useEffect, useRef } from "react";
 import {
   FAQ,
@@ -16,6 +17,8 @@ export const Home = ({ articles }) => {
   const aboutRef = useRef(null);
   const servicesRef = useRef(null);
   const contactsRef = useRef(null);
+
+  const [state, handleSubmit] = useForm("xoqolkkb");
 
   useEffect(() => {
     // Sendpulse auth
@@ -343,27 +346,39 @@ export const Home = ({ articles }) => {
               help with any information you need.
             </p>
 
-            <form className="flex flex-col">
-              <input
-                type="text"
-                placeholder="Name"
-                className="py-4 mb-8 bg-transparent border-b border-b-gray"
-              />
+            {state.succeeded && (
+              <span className="text-white text-lg font-light">
+                Thank you for reach us out!
+              </span>
+            )}
 
-              <input
-                type="email"
-                placeholder="Email"
-                className="py-4 mb-16 bg-transparent border-b border-b-gray"
-              />
+            {!state.succeeded && (
+              <form className="flex flex-col" onSubmit={handleSubmit}>
+                <input
+                  name="name"
+                  required
+                  type="text"
+                  placeholder="Name"
+                  className="py-4 mb-8 bg-transparent border-b border-b-gray text-white"
+                />
 
-              <button className="flex items-center justify-between">
-                <span className="block mb-4 text-lg text-gray uppercase font-light">
-                  Send a request
-                </span>
+                <input
+                  name="email"
+                  required
+                  type="email"
+                  placeholder="Email"
+                  className="py-4 mb-16 bg-transparent border-b border-b-gray text-white"
+                />
 
-                <ArrowNavLink />
-              </button>
-            </form>
+                <button className="flex items-center justify-between">
+                  <span className="block mb-4 text-lg text-gray uppercase font-light">
+                    Send a request
+                  </span>
+
+                  <ArrowNavLink />
+                </button>
+              </form>
+            )}
           </div>
 
           <div className="hidden lg:block basis-3/4 w-full relative">
